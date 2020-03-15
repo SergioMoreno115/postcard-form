@@ -1,75 +1,156 @@
-@font-face {
-    font-family: 'secret_typewriterregular';
-    src: url('veteran_typewriter-webfont.eot');
-    src: url('veteran_typewriter-webfont.eot?#iefix') format('embedded-opentype'),
-         url('veteran_typewriter-webfont.woff2') format('woff2'),
-         url('veteran_typewriter-webfont.woff') format('woff'),
-         url('veteran_typewriter-webfont.ttf') format('truetype'),
-         url('veteran_typewriter-webfont.svg#secret_typewriterregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+ @font-face {
+    font-family: "typewriter";
+    src: url('fonts/veteran_typewriter.eot');
+    src: url('fonts/veteran_typewriter.eot?') format('eot'),
+         url('fonts/veteran_typewriter.woff2') format('woff2'),
+         url('fonts/veteran_typewriter.woff') format('woff'),
+         url('fonts/veteran_typewriter.ttf') format('truetype');
+         
+  
 
 }
 
 
 @font-face {
-    font-family: 'journalregular';
-    src: url('journal-webfont.eot');
-    src: url('journal-webfont.eot?#iefix') format('embedded-opentype'),
-         url('journal-webfont.woff2') format('woff2'),
-         url('journal-webfont.woff') format('woff'),
-         url('journal-webfont.ttf') format('truetype'),
-         url('journal-webfont.svg#journalregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    font-family: "handwriting";
+    src: url('fonts/journal-webfont.eot');
+    src: url('fonts/journal-webfont.eot?') format('eot'),
+         url('fonts/journal-webfont.woff2') format('woff2'),
+         url('fonts/journal-webfont.woff') format('woff'),
+         url('fonts/journal-webfont.ttf') format('truetype');
+        
 
-}
+} 
 
-
-
-body{
-   
+html{
     width: 740px;
     height: 498px;
-    background-color: white;
+}
+
+body{
+    padding : 2em;
+    margin  : 0;
+  
+ 
+  
+}
+form{  
+    width: 740px;
+    height: 498px;
     background: #ffffff url("background.jpg") no-repeat;
-}
-form{
+   
   
 }
-.container{
-   display: grid;
+
+.vengaya{
+    display: grid;
+   
+    grid-template-rows:repeat( 4, 7rem);
+    grid-template-columns: repeat(2, 7rem);
+    
+
+width: 80%;
+/* padding-top: 7rem; */
+    
+ 
   
-    align-content: space-around;
+    grid-column-gap:18.8rem; 
+   
+   
+
 }
+
 .grid{
-    background-color: teal;
-}
-.lorem{
-    margin-left: 43vh;
-    background-color: teal;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+   
+    
+  }
 
-.from{
-    margin-left: 43vh;
-    background-color: teal;
-}
-
-.reply{
-    margin-left: 43vh;
-   margin-top: -4vh;
-   background-color: teal;
+.grid-1{
+    grid-row: span 4;   
+    width: 28vh;
+    /* height: 30vh; */
+   padding-bottom: 90px;
 }
 
-.message{
-    margin-top: 10vh;
-    background-color: teal;
+.grid-2{
+   align-items: flex-end;
+ 
+   height: 13.6rem;
 }
 
-.send{
-    margin-left: 43vh;
-    margin-bottom: 67vh;
-    background-color: teal;
-}
 
+.grid-3{
+    height: 18.6rem;
+    padding-left: 4rem;
+  } 
+
+  .grid-4{
+    height: 11rem;
+    padding-left: 4rem;
+    
+  } 
+
+
+ h1 {
+    position : absolute;
+  left: 451px;
+    top: 221px;
+   font-size: 1em;
+    font-family: "typewriter", sans-serif;
+  }
+  form>label {
+    font-size: .8em;
+    font-family: "typewriter", sans-serif;
+  }
+
+  input{
+    border:none;            
+    font-family: "handwriting", sans-serif;
+    font-size: .8em;
+    
+    
+   
+   
+  }
+ 
+#postcardbody{
+    position: absolute;
+   top:160px;
+   left:40px;
+  
+    resize: none;
+    border  : none;
+  padding : 10px;
+  margin  : 0;
+  width   : 290px;
+    font-family: "handwriting", sans-serif;
+    font-size: .9em;
+
+}
+#send::after {
+    content: " >>>";
+  }
+
+  input:focus, textarea:focus, button:focus {
+    background   : rgba(0,0,0,.1);
+    border-radius: 4px;
+    outline: none;
+    border  : none;
+    
+  }
+
+  button{
+      transform: rotate(-1.5deg);
+      border: 2px solid #333;
+      border-radius: 5px;
+      position: absolute;
+      left: 470px;
+      top: 390px;
+    
+      padding: 5px;
+  }
 
