@@ -5,10 +5,7 @@
          url('fonts/veteran_typewriter.woff2') format('woff2'),
          url('fonts/veteran_typewriter.woff') format('woff'),
          url('fonts/veteran_typewriter.ttf') format('truetype');
-         
-  
-
-}
+  }
 
 
 @font-face {
@@ -18,139 +15,128 @@
          url('fonts/journal-webfont.woff2') format('woff2'),
          url('fonts/journal-webfont.woff') format('woff'),
          url('fonts/journal-webfont.ttf') format('truetype');
-        
+  } 
 
-} 
 
 html{
     width: 740px;
     height: 498px;
-}
+  }
+
 
 body{
-    padding : 2em;
-    margin  : 0;
-  
- 
-  
-}
+    padding: 2em;
+    margin: 0; 
+  }
+
+
 form{  
     width: 740px;
     height: 498px;
-    background: #ffffff url("background.jpg") no-repeat;
-   
-  
-}
+    background: #ffffff url("background.jpg") no-repeat; 
+  }
 
-.vengaya{
+
+.gridcontainer{
     display: grid;
-   
+    width: 80%;
     grid-template-rows:repeat( 4, 7rem);
     grid-template-columns: repeat(2, 7rem);
-    
-
-width: 80%;
-/* padding-top: 7rem; */
-    
- 
-  
     grid-column-gap:18.8rem; 
-   
-   
+  }
 
-}
 
 .grid{
     display: flex;
     justify-content: center;
-    align-items: center;
- 
-   
-    
+    align-items: center;   
   }
+
 
 .grid-1{
     grid-row: span 4;   
-    width: 28vh;
-    /* height: 30vh; */
-   padding-bottom: 90px;
-}
+    width: 35vh;
+  }
+
 
 .grid-2{
-   align-items: flex-end;
- 
-   height: 13.6rem;
-}
+    height: 13.6rem;
+  }
 
 
-.grid-3{
-    height: 18.6rem;
-    padding-left: 4rem;
+.grid-3{  
+    height: 18.6rem; 
   } 
 
-  .grid-4{
+
+.grid-4{
     height: 11rem;
-    padding-left: 4rem;
-    
   } 
 
 
- h1 {
+h1{
     position : absolute;
-  left: 451px;
+    left: 451px;
     top: 221px;
-   font-size: 1em;
+
+    font-size: 1em;
     font-family: "typewriter", sans-serif;
   }
-  form>label {
+
+
+form>label{
     font-size: .8em;
     font-family: "typewriter", sans-serif;
   }
 
-  input{
-    border:none;            
+
+input{
+    border:none;    
+
     font-family: "handwriting", sans-serif;
-    font-size: .8em;
-    
-    
-   
-   
+    font-size: .8em; 
   }
  
-#postcardbody{
-    position: absolute;
-   top:160px;
-   left:40px;
-  
+
+textarea{
     resize: none;
-    border  : none;
-  padding : 10px;
-  margin  : 0;
-  width   : 290px;
+    border: none;
+    width: 300px;
+    height: 250px;
+    outline: none;
+  
     font-family: "handwriting", sans-serif;
     font-size: .9em;
+  }
 
-}
-#send::after {
+#message{
+    position: absolute;
+    padding-top: 70px;
+    margin-bottom: 40px;
+    padding-left: 30px;
+  }
+
+
+#send::after{
     content: " >>>";
   }
 
-  input:focus, textarea:focus, button:focus {
-    background   : rgba(0,0,0,.1);
+
+input:focus, textarea:focus, button:focus{
+    background: #F2F2F2;
     border-radius: 4px;
     outline: none;
-    border  : none;
-    
+    border: none;  
   }
 
-  button{
-      transform: rotate(-1.5deg);
-      border: 2px solid #333;
-      border-radius: 5px;
-      position: absolute;
-      left: 470px;
-      top: 390px;
-    
-      padding: 5px;
+
+button{
+    transform: rotate(-1.5deg);
+    border: 2px solid #333;
+    border-radius: 5px;
+    position: absolute;
+    left: 470px;
+    top: 390px;
+    padding: 5px;
   }
 
